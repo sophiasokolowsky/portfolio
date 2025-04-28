@@ -8,50 +8,68 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Brown University Dorm Washing Machineso</title>
+    <title>Portfolio Homepage</title>
     <!-- import CSS styles -->
-    <link rel="stylesheet" href="styles.css" /> 
+    <link rel="stylesheet" href="portfolio.css" /> 
   </head>
 
   <!-- page content goes into <body> -->
   <body>
-    <header>
-      <div class="logo">DesignThatWorks</div>
+    <header class="navbar">
       <nav>
-        <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="observations.html">Observations</a></li>
-          <li><a href="personas.html">Personas </a></li>
-          <li><a href="storyboard.html">Storyboard</a></li>
-          <li><a href="interactive.html">Interactive</a></li>
-        </ul>
+          <ul>
+              <li><a href="#intro">Home</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+          </ul>
       </nav>
     </header>
 
-    <main class="intro">
-      <h1>Fixing the Dorm Laundry Dilemma</h1>
-      <p>Exploring user experiences with Brown University dorm laundry machines. This project documents real user interactions, frustrations, and potential improvements to improve the user experience.</p>
+    <section class="intro" id="intro">
+      <h1>Welcome!</h1>
+      <p>My name is Sophia Sokolowsky. I am an officer in the United States Air Force and a developer dedicated to bridging the gap between design and security. My work focuses on building intuitive, secure systems that prioritize both usability and protection. I specialize in creating user-centered digital experiences that are as secure as they are seamless.</p>
+    </section>
+
+    <main class="projects" id="projects">
+      <h2>My Projects</h2>
+
+      <a href="./responsive-redesign-project-1/index.html" class="project-box">
+        <h3>Air Force Holm Center Portal Caset Study & Redesign</h3>
+        <p>A redesign of the U.S. Air Force Holm Center's homepage focused on improving accessibility, usability, and 
+          mobile compatibility. I restructured the site's architecture by improving its visual hierarchy, created mockups for 
+          desktop, tablet, and mobile user views, and coded a homepage prototype with fully responsive elements, providing 
+          a more intuitive user experience.</p>
+      </a>
+
+      <a href="./story-board-project-2/index.html" class="project-box">
+        <h3>Laundry Interface Case Study & Redesign</h3>
+        <p>This project explores how improving everyday system design - in this case, Brown University's dorm laundry interface - 
+          can strengthen user trust, security, and operational efficiency. By identifying usability flaws and addressing points of 
+          user frustration, I focused on how thoughtful redesigns promote better system compliance and resilience, both of which 
+          are foundational to cybersecurity practices in critical environments like the Air Force.</p>
+      </a>
+
+      <a href="./project-3/index.html" class="project-box">
+        <h3>Case Study on Accessible Design & System Resilience</h3>
+        <p>This project analyzes critical components of everyday digital interfaces to identify how input methods, output behavior, 
+          and component states affect accessibility, usability, and user trust. By ensuring that systems are intuitive and inclusive 
+          across all user interactions, I demonstrated how intentional design can strengthen compliance and therefore security.</p>
+      </a>
+
+      <a href="./project-4/index.html" class="project-box">
+        <h3>Secure Learning Platform Design</h3>
+        <p>This project focused on designing an intuitive, secure learning platform for Miyagi Labs based solely on a startup 
+          concept description. Through iterative prototyping, critique, and user testing, we explored how system clarity, 
+          accessibility, and component consistency drive user trust and operational success.</p>
+      </a>
     </main>
 
+    <footer class="footer" id="contact">
+      <p>Email: sophia_sokolowsky@brown.edu</p>
+      <p>Phone: (012) 345-6789</p>
+      <p> &copy;2025 designthatworks.com</p>
+    </footer>
 
-    <section class="previews">
-      <div class="preview">
-          <h2>Observations</h2>
-          <p>Discover key insights from real student interactions with dorm laundry machines.</p>
-          <a href="observations.html" class="button">Learn More</a>
-      </div>
-      <div class="preview">
-          <h2>Personas</h2>
-          <p>Meet fictional representations of typical users, based on real interviews.</p>
-          <a href="personas.html" class="button">View Personas</a>
-      </div>
-      <div class="preview">
-          <h2>Storyboarding</h2>
-          <p>Follow a typical user&apos;s laundry journey through a visual storyboard.</p>
-          <a href="storyboard.html" class="button">See Storyboard</a>
-      </div>
-    </section>
-  
   </body>
 
 </html>

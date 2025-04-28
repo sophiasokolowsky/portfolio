@@ -1,0 +1,71 @@
+  <!-- TO RUN IN BROWSER:
+    1. Install vscode extension Name: open in `browser open-in-browser` by TechER
+    2. Right click html file and either run in default browser or another browser
+  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML/CSS Studio</title>
+    <!-- import CSS styles -->
+    <link rel="stylesheet" href="styles.css" /> 
+    <style>
+        /*Style for homepage image*/
+        .homepage {
+          margin-left: 15%;
+          width: 50%;
+          box-sizing: content-box;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: auto;
+          background-color: #ffffff;
+          position: fixed;
+          top: 140px;
+          margin: 100px 225px;
+        }
+   
+        .home-image {
+          max-width: 80%;
+          max-height: auto;
+        }
+
+        .home-text{
+          max-width: 65%;
+          height:auto;
+          margin-left: 40%;
+          margin-top: 12%;
+          margin-right: 6%;
+          position: relative;
+        }
+    </style>
+  </head>
+
+  <!-- page content goes into <body> -->
+  <body>
+    <header>
+      <h1>Accessible Components</h1>
+  </header>
+  
+  <nav class="menu">
+    <a href="../index.html">Back to Portfolio</a>
+    <a href="index.html">Home</a>
+    <a href="input.html">Part 1: Input</a>
+    <a href="output.html">Part 2: Output</a>
+    <a href="state-models.html">Part 3: State Models</a>
+    <a href="reflection.html">Part 4: Reflection</a>
+  </nav>
+
+  <div class="homepage">
+    <img src="./assets/homepage-icon.png" alt="Home Image" class="home-image">
+  </div>
+
+  <div class="home-text">
+    <img src="./assets/home-text.png" alt="Home Text" class="home-text">
+  </div>
+
+  </body>
+
+</html>

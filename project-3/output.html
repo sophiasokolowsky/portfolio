@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Part 2: Output</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1>Part 2: Output</h1>
+    </header>
+
+    <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="input.html">Part 1: Input</a>
+        <a href="output.html">Part 2: Output</a>
+        <a href="state-models.html">Part 3: State Models</a>
+        <a href="reflection.html">Part 4: Reflection</a>
+    </nav>
+
+    <div class="content">
+        <h2>How do various outputs effect user accessibility?</h2>
+        <h3>On this page, we will take a look specifically at the outputs of pressing the search button across various 
+            applications to determine how they effect the accessibility of the button. We will also see how a webpages focus order
+            and screen reader capabilities effect its usability.</h3>
+        <h4>I analyzed each of these one by one. Click each button to learn more about my experience!</h4>
+
+        <div class="legend">
+            <img src="./assets/legend-2.png" alt="legend 2" class="legend-image-2">
+        </div>
+
+        <!--Info buttons-->
+        <div id="buttons">
+            <button onclick="showText('text1')" class="button button-21">Google: Output</button>
+            <p id="text1" style="display: none;">When hovering over the button, the outline around it highlights white, 
+                letting the user know that they can click it. When clicking down, nothing happens. When releasing the click, 
+                the search is submitted. The way the user knows their search has been submitted is because the page is redirected 
+                to show their search results. The actual search button does not display any output that would make the user 
+                aware that they have clicked it. The outline remains white until the page is redirected. I think this is a simple 
+                design that works well because it is clear about what is happening but does not come across as overwhelming.</p>
+
+            <button onclick="showText('text2')" class="button button-22">Google: Focus Order</button>
+            <p id="text2" style="display: none;">Search bar -> Search by Voice Icon -> Search by Image Icon -> Google Search Button 
+                -> Vibe of the Day Button... Cycles 1-5 then back to 1. This focus order makes a lot of intuitive sense as it 
+                follows the key elements on the screen in order from top to bottom, left to right. This makes sense for someone 
+                who can not read what is on the screen, as it follows the layout of the screen and is very intentional.</p>
+
+            <button onclick="showText('text3')" class="button button-23">Google: Screen Reader</button>
+            <p id="text3" style="display: none;">Upon activating voiceover, it alerts the user that they are on the Google 
+                Homepage. It states that the user is currently on a combo box. Type text or to see a list of options, press 
+                control+option+space. This is very helpful as it tells the user how to interact with the component that they 
+                are on. However, I think it would be more helpful if it made it more clear that it is a search box. I personally 
+                would not know what a combo box meant if I was not able to see it. From there, if the user presses tab, it moves 
+                to the next item on the screen, alerts the user to what this item is (a button, a frame, Google, leaving 
+                Google, etc.) and tells the user what keys to press to interact with the item/object they are currently on. 
+                If you actively put in a search and use the arrow keys to go up and down the list of search suggestions, it 
+                reads the text to you. I think that overall Google is well equipped and designed to allow user interaction 
+                using voiceover.</p>
+
+            <button onclick="showText('text4')" class="button button-24">CNN: Output</button>
+            <p id="text4" style="display: none;">When hovering over the search icon, there is no change on the button that 
+                notifies the user that they can click it. Upon clicking the button, there is still no change in output. Once 
+                releasing the click of the button, the website reloads and outputs a list of related news articles based on 
+                the users search. I think this could be improved by having some kind of change in the output of the button 
+                when hovering over it to make it clear to the user that they can click it for functionality, rather than 
+                it appearing as decoration on the website.</p>
+
+            <button onclick="showText('text5')" class="button button-25">CNN: Focus Order</button>
+            <p id="text5" style="display: none;">Sign In Button -> Search Bar -> Unclear what the selected object is, but it 
+                shows all the various news article topics one can find on the website -> Browser Search Bar... Cycles 1-4 then 
+                back to 1. This focus order is a bit ambiguous. Considering a user has already navigated to the search 
+                portion of the website, I do find it weird that the website prioritizes the sign in button first. While 
+                it may be annoying to the user however, it might make the most sense for CNN since they make a profit off of 
+                subscriptions. Once you click to the search bar, the next focus item is not the search icon as one might expect. 
+                It actually skips to the bottom of the page to show all the various news topics one can choose from. This is 
+                not intuitive and I think there should be a focus step added to include the search icon. Lastly, it has a focus 
+                item of the browser's search bar. I think this is unnecessary.</p>
+
+            <button onclick="showText('text6')" class="button button-26">CNN: Screen Reader</button>
+            <p id="text6" style="display: none;">Upon activating voiceover, it alerts the user that they are on the CNN website. 
+                When navigating to the search bar, voice over notifies you that you are in the search bar. It then tells you to 
+                type text and tells you how to submit your search. However, when clicking tab, it becomes clear that while the 
+                search bar and its search suggestions take up the entirety of the screen, the Screen Reader is actually reading 
+                information from the homepage of CNN which is hidden by the search bar. This is incredibly confusing, and 
+                difficult to interpret and navigate. It is so overwhelming, no one would be able to understand what is going on 
+                if they were not able to see the screen (and it took a combination of voiceover and seeing the screen for me to 
+                figure out what it was doing). This is a very bad design.</p>
+
+            <button onclick="showText('text7')" class="button button-27">CAB: Output</button>
+            <p id="text7" style="display: none;">When hovering over the search icon, the entire button darkens in color. 
+                This notifies the user that they can click it. Upon clicking down, no output changes. When the user releases 
+                their click, a panel slides out from the right side of the main panel with a list of courses matching the 
+                users search. Once the user moves their mouse so it is no longer hovering on the search button, the button 
+                returns to its normal color. This is well designed, easy to understand, and very readable. I really like the 
+                aspect of the darkening of actionable objects as the user hovers over them as even people who are colorblind 
+                would be able to notice a difference.</p>
+
+            <button onclick="showText('text8')" class="button button-28">CAB: Focus Order</button>
+            <p id="text8" style="display: none;">Main Search Bar -> Term Selection Drop Down -> Course Number Selection Drop 
+                Down -> Modes of Instruction Drop Down -> Saved Carts Drop Down -> Department Drop Down -> Subject Drop Down -> 
+                Time Drop Down -> Credits Drop Down -> Instructor Search Bar -> Browser Search Bar... Cycles 1-11 then back to 1. 
+                This focus order makes a lot of sense as it follows the general layout of the webpages key elements. 
+                It has them prioritized from top to bottom. That being said, it does skip the Find Courses Button which 
+                submits the users search. I think this should be added as a step in-between the 4th and 5th step.</p>
+
+            <button onclick="showText('text9')" class="button button-29">CAB: Screen Reader</button>
+            <p id="text9" style="display: none;">Overall, I deem this voiceover functionality as highly effective. When activating 
+                it, it alerts the user that they are on the Courses at Brown webpage. When activating the search bar, it tells 
+                the user to type in a keyword or subject, but it does not specify that this is a search box, which would be helpful. 
+                It then goes down the left panel of the webpage and highlights each object when pressing tab to include the Find 
+                Courses button. It does not skip any which is very good. It also notifies the user on how to use their 
+                keyboard to use any of the objects functions. One downside is that it fails to access any other portion of the 
+                webpage (only the search fields on the left side). I think it would be useful if it could also access the 
+                recommended course listings in the center of the webpage as they are a key element when looking at the screen.</p>
+        </div>
+        <h4>As you can see above, I most prefer CABs output functions, and Googles focus order and Screen Reader capabilities. 
+            I strongly dislike CNNs Screen Reader capabilities. The Screen Reader always notifies users what key presses they 
+            must initiate to make use of the object they have selected, but the focus order of the webpage has a huge impact 
+            on the accessibility of the webpage via the Screen Reader.</h4>
+    </div>
+    
+
+    <!--show text for buttons (js)-->
+    <script>
+        function showText(id) {
+            const element = document.getElementById(id);
+            if (element.style.display === "none") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

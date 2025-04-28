@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Part 1: Input</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1>Part 1: Input</h1>
+    </header>
+
+    <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="input.html">Part 1: Input</a>
+        <a href="output.html">Part 2: Output</a>
+        <a href="state-models.html">Part 3: State Models</a>
+        <a href="reflection.html">Part 4: Reflection</a>
+    </nav>
+
+    <div class="content">
+        <h2>How do various inputs effect user accessibility?</h2>
+        <h3>On this page, we will take a look into how user interaction and input can change the accessibility features of a 
+            search bar. We will be looking at users limited to using only a mouse, only a keyboard, and only touch to use 
+            the features of the search bar on three different applications. Look at the image below for reference of what each
+            applications search bar looks like.</h3>
+            <div class="legend">
+                <img src="./assets/search-bars.png" alt="legend 1" class="legend-image-1">
+            </div>
+        <h4>I looked at search bars from Google, CNN, and CAB to analyze their accessibility when using only a mouse, only a keyboard, and only touch screen.
+            Click each button to learn more about my experience with each!</h4>
+
+        <div class="legend">
+            <img src="./assets/legend-1.png" alt="legend 1" class="legend-image-1">
+        </div>
+
+        <!--Info buttons-->
+        <div id="buttons">
+            <button onclick="showText('text1')" class="button button-1">Google: Mouse User</button>
+            <p id="text1" style="display: none;">When a user clicks on the search bar, a list of recommended searches appear based on
+                 worldwide trending searches. If a user wishes to input their own prompt, they must use the keyboard to type in their 
+                 response. If a user begins typing a search, more recommended searches pop up in a drop down menu that the user can 
+                 use their mouse or trackpad to click on. Note: the search bar is only accessible to input a specific 
+                 search from the user if they have access to a keyboard.</p>
+
+            <button onclick="showText('text2')" class="button button-2">Google: Keyboard User</button>
+            <p id="text2" style="display: none;">By only accessing the keyboard to use Googles Search Bar, one can fully carry 
+                out the task they are trying to achieve. Loading into the google homepage, the search bar is already activated 
+                awaiting user input. The line that indicates this is flashing on and off in the same place to let users know that 
+                it is awaiting input. From there, a user can use the keyboard to type in their search and then press enter to 
+                initiate the search. While typing, a user can also use the down or up arrows to select a suggested search based 
+                on the text they have already begun to input. Note: A user needs only a keyboard (no mouse/trackpad, or touch) 
+                in order to use Googles search bar.</p>
+
+            <button onclick="showText('text3')" class="button button-3">Google: Touch User</button>
+            <p id="text3" style="display: none;">On a mobile device, Googles home page does not have the search bar automatically 
+                activated. In this case, the user must click an existing recommended search based on world wide trending searches 
+                from a displayed list or they must click into the search bar itself. Once they click into the search bar, it is 
+                activated and awaiting their input. They must then use the touch keyboard to type in their search. Note: A user 
+                can use all functional aspects of the search bar using touch features such as clicking into the search bar and 
+                using the touch keyboard to type their search.</p>
+
+            <button onclick="showText('text4')" class="button button-4">CNN: Mouse User</button>
+            <p id="text4" style="display: none;">When a user lands on CNNs search page, there is a displayed search bar that is 
+                not currently selected. A user then must use their mouse or trackpad to click into the search bar. From here, 
+                they must use their keyboard to type in a search. They can then use their mouse to click on the search icon in 
+                the far right hand side of the search bar to submit their search. It is a bit inconvenient to use the mouse to 
+                initiate the search as the user must travel their mouse or trackpad across the entire page to reach the search 
+                icon. Note: the search bar is not functionally accessible without a keyboard.</p>
+
+            <button onclick="showText('text5')" class="button button-5">CNN: Keyboard User</button>
+            <p id="text5" style="display: none;">By only accessing the keyboard to use CNNs Search Bar, one can fully carry out 
+                the task they are trying to achieve. To activate the search bar so that it is awaiting user input, the user must 
+                hit the tab bar on their keyboard twice, which is not at all intuitive or learnable. Once there, the line that 
+                indicates search bar activation is flashing on and off in the same place to let users know that it is awaiting 
+                input. From there, a user can use the keyboard to type in their search and then press enter to initiate the 
+                search. Note: A user needs only a keyboard (no mouse/trackpad, or touch) in order to use CNNs search bar.</p>
+
+            <button onclick="showText('text6')" class="button button-6">CNN: Touch User</button>
+            <p id="text6" style="display: none;">On a mobile device, CNNs search bar is not automatically activated. Therefore, 
+                a user must first click into the search bar box and then use their touch keyboard to type in their search. They 
+                can then choose to either press search/enter on their touch keyboard or they can press the search icon on the 
+                right side of the search bar. Both submission options are easily accessible. Note: A user can use all functional 
+                aspects of the search bar using touch features such as clicking into the search bar and using the touch 
+                keyboard to type their search.</p>
+
+            <button onclick="showText('text7')" class="button button-7">CAB: Mouse User</button>
+            <p id="text7" style="display: none;">On the CAB homepage, the search bar is automatically activated. A user must 
+                then use their keyboard to type in a search prompt. From there, if a user wishes to submit their search, 
+                they must move their mouse away from the search bar a couple inches to a button that says find courses. This may 
+                not be very intuitive for everyone. Note: the search bar is not functionally accessible without a keyboard.</p>
+
+            <button onclick="showText('text8')" class="button button-8">CAB: Keyboard User</button>
+            <p id="text8" style="display: none;">By only accessing the keyboard to use CABs Search Bar, one can fully carry out 
+                the task they are trying to achieve. Upon entering the CAB homepage, a user must simply type in their search 
+                prompt on their keyboard, then press enter to submit their search. It is very straightforward and intuitive.
+                Note: A user needs only a keyboard (no mouse/trackpad, or touch) in order to use CABs search bar.</p>
+
+            <button onclick="showText('text9')" class="button button-9">CAB: Touch User</button>
+            <p id="text9" style="display: none;">On a mobile device, CABs search bar is automatically activated. Therefore, a 
+                user can immediately type their search prompt using the touch keyboard function and then they can either hit 
+                enter on that keyboard, or they must scroll down and click the button that says find courses. Note: A user can 
+                use all functional aspects of the search bar using touch features such as clicking into the search bar and 
+                using the touch keyboard to type their search.</p>
+        </div>
+        <h4>As you can see above, most search bars can not be used without a keyboard, as it is required for the user to type in their 
+            prompt. Google however, allows users to select a search prompt from a list of trending searches giving it some 
+            functionality without a keyboard. It is very helpful for users when the search bar loads and is already activated and 
+            awaiting user input. Although it is intuitive for users to click into the search bar with a mouse, it is far less intuitive,
+             learnable, and memorable for them to have to hit the tab bar twice if they only have access to a keyboard. Lastly, having 
+             the ability to either press enter or click a search button to initiate a users search, is beneficial. This makes sure a 
+             user has multiple accessible ways to submit their search.</h4>
+    </div>
+
+    <!--show text for buttons (js)-->
+    <script>
+        function showText(id) {
+            const element = document.getElementById(id);
+            if (element.style.display === "none") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

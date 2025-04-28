@@ -1,0 +1,157 @@
+/*style for pages default*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/*default heading styles*/
+header {
+    background-color: #e4e2e2;
+    text-align: center;
+    color: #0A0F27;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 100px;
+    width: 85%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 30px 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3.5em;
+}
+
+/*default style for menu*/
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 100%;
+    background-color: #0A0F27;
+    color: #e8dbce;
+    padding: 60px 0;
+}
+
+.menu a {
+    display: block;
+    padding: 15px 30px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #252b4a;
+}
+
+.content {
+    margin-left: 15%;
+    padding: 180px 20px 20px;
+    background-color: #ffffff;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.button {
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.button-1 {background-color: orange;}
+.button-2 {background-color: rgb(62, 195, 62);}
+.button-3 {background-color: rgb(62, 195, 62);}
+.button-4 {background-color: rgb(183, 32, 32);}
+.button-5 {background-color: rgb(62, 195, 62);}
+.button-6 {background-color: rgb(62, 195, 62);}
+.button-7 {background-color: rgb(183, 32, 32);}
+.button-8 {background-color: rgb(62, 195, 62);}
+.button-9 {background-color: rgb(62, 195, 62);}
+
+.button-1:hover {background-color: rgb(162, 107, 4)}
+.button-2:hover {background-color: rgb(38, 121, 38);}
+.button-3:hover {background-color: rgb(38, 121, 38);}
+.button-4:hover {background-color: rgb(127, 17, 17);}
+.button-5:hover {background-color: rgb(38, 121, 38);}
+.button-6:hover {background-color: rgb(38, 121, 38);}
+.button-7:hover {background-color: rgb(127, 17, 17);}
+.button-8:hover {background-color: rgb(38, 121, 38);}
+.button-9:hover {background-color: rgb(38, 121, 38);}
+
+h3 {
+    font-weight: lighter;
+}
+
+.legend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.legend-image-1 {
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.legend-image-2 {
+    width: 60%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.button-21 {background-color: rgb(62, 195, 62);}
+.button-22 {background-color: rgb(62, 195, 62);}
+.button-23 {background-color: rgb(62, 195, 62);}
+.button-24 {background-color: orange;}
+.button-25 {background-color: orange;}
+.button-26 {background-color: rgb(183, 32, 32);}
+.button-27 {background-color: rgb(62, 195, 62);}
+.button-28 {background-color: orange;}
+.button-29 {background-color: orange;}
+
+.button-21:hover {background-color: rgb(38, 121, 38);}
+.button-22:hover {background-color: rgb(38, 121, 38);}
+.button-23:hover {background-color: rgb(38, 121, 38);}
+.button-24:hover {background-color: rgb(162, 107, 4);}
+.button-25:hover {background-color: rgb(162, 107, 4);}
+.button-26:hover {background-color: rgb(127, 17, 17);}
+.button-27:hover {background-color: rgb(38, 121, 38);}
+.button-28:hover {background-color: rgb(162, 107, 4);}
+.button-29:hover {background-color: rgb(162, 107, 4);}
+
+.new-buttons {
+    width: 40%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.new-button {
+    width: 35%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}

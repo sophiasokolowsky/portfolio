@@ -1,6 +1,6 @@
 body {
-  background-color: rgb(63, 51, 37);
-  color: rgb(230, 202, 187);
+  background-color: #0A0F27;
+  color: rgb(249, 241, 230);;
   font-family: serif;
   margin: 0;
   padding: 0;
@@ -10,7 +10,7 @@ body {
 }
 
 header {
-  background-color: rgb(50, 40, 30);
+  background-color: #e8dbce;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,6 +27,7 @@ header {
   font-size: 24px;
   font-weight: bold;
   margin-left: 40px;
+  color: #0A0F27;
 }
 
 nav ul {
@@ -43,7 +44,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: rgb(230, 202, 187);
+  color: #0A0F27;
   font-size: 18px;
 }
 
@@ -61,7 +62,7 @@ nav ul li a.active {
 .intro h1 {
   font-size: 46px;
   font-weight: bold;
-  color: rgb(245, 222, 200);
+  color: rgb(249, 241, 230);
   margin-bottom: 15px;
 
 }
@@ -81,7 +82,7 @@ nav ul li a.active {
 }
 
 .preview {
-  background-color: rgb(55, 45, 35);
+  background-color: rgb(249, 238, 223);
   padding: 25px;
   border-radius: 12px;
   text-align: center;
@@ -96,20 +97,21 @@ nav ul li a.active {
 
 .preview h2 {
   font-size: 22px;
-  color: rgb(250, 235, 215);
+  color: #0A0F27;
 }
 
 .preview p {
   font-size: 16px;
   opacity: 0.8;
+  color: #0A0F27;
 }
 
 .button {
   display: inline-block;
   margin-top: 15px;
   padding: 10px 15px;
-  background-color: rgba(245, 222, 200, 0.635);
-  color: rgb(50, 40, 30);
+  background-color: #18205296;
+  color: rgb(249, 241, 230);
   text-decoration: none;
   border-radius: 6px;
   font-weight: bold;
@@ -141,21 +143,23 @@ nav ul li a.active {
 }
 
 .observation {
-  background-color: rgb(50, 40, 30);
+  background-color: #e8dbce;
   padding: 20px;
   border-radius: 10px;
   text-align: left;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  color: #0A0F27;
 }
 
 .observation h2 {
   font-size: 20px;
-  color: rgb(250, 235, 215);
+  color:#0A0F27;
 }
 
 .observation p {
   font-size: 16px;
   opacity: 0.8;
+  color: #0A0F27;
 }
 
 .interface ul, .summary ul {
@@ -172,14 +176,15 @@ nav ul li a.active {
 .interviews {
   margin-top: 50px;
   text-align: left;
-  background-color: rgb(55, 45, 35);
+  background-color: #e8dbce;
   padding: 20px;
   border-radius: 10px;
+  color: #0A0F27;
 }
 
 .questions h3, .summary h3 {
   font-size: 22px;
-  color: rgb(250, 235, 215);
+  color: #0A0F27;
 }
 
 .questions ul, .summary ul {
@@ -219,7 +224,8 @@ nav ul li a.active {
 }
 
 .quote-box {
-  background-color: rgb(55, 45, 35);
+  background-color: #e8dbce;
+  color: #0A0F27;
   padding: 15px;
   border-radius: 8px;
   font-style: italic;

@@ -1,0 +1,115 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f7ece0;
+    color: #000000;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #0A0F27;
+    color: #ffffff;
+    text-align: center;
+    padding: 4rem 2rem;
+    margin-bottom: 3rem;
+    border-bottom: 5px solid #e8dbce;
+}
+
+.header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+}
+
+.header p {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    letter-spacing: 0.03em;
+}
+
+/* projects style */
+.projects {
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.projects h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-weight: normal;
+}
+
+.project-box {
+    display: block;
+    background-color: #D4D4D4;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.project-box h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #151515;
+    font-weight: normal;
+}
+
+.project-box p {
+    font-size: 1rem;
+    color: #676767;
+    text-align: left;
+    margin-left: 2rem;
+}
+
+img {
+    width: 70%;
+}
+
+.project-img {
+    width: 50%;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.box img {
+    width: 45%;
+    max-width: 500px;
+}
+
+.box ul {
+    flex: 1;
+    font-size: 1rem;
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.back {
+    color:#e8dbce;
+    background-color: #0A0F27;
+    padding: 0.5rem;
+    font-size: smaller;
+    border-radius: 12px;
+    text-decoration: none;
+}

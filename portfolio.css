@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f7ece0;
+    color: #000000;
+    line-height: 1.6;
+}
+
+/* nav bar style */
+.navbar {
+    background-color: #e8dbce;
+    padding: 1rem 2rem;
+    text-align: right;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar li {
+    display: inline;
+    margin-left: 1.5rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* intro style */
+.intro {
+    background-color: #0A0F27;
+    color: #fff;
+    padding: 3rem 3rem;
+    border-bottom-left-radius: 100% 60%;
+    border-bottom-right-radius: 100% 60%;
+}
+
+.intro h1 {
+    font-size: 3rem;
+    margin-bottom: 1.2rem;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.intro p {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    font-size: 1.2rem;
+    text-align: left;
+    font-weight: lighter;
+    letter-spacing: 0.035cm;
+}
+
+/* projects style */
+.projects {
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.projects h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-weight: normal;
+}
+
+.project-box {
+    display: block;
+    background-color: #D4D4D4;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.project-box h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #151515;
+    font-weight: normal;
+}
+
+.project-box p {
+    font-size: 1rem;
+    color: #676767;
+    text-align: left;
+    margin-left: 2rem;
+}
+
+/* footer */
+.footer {
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 0.9rem;
+    background-color: #0A0F27;
+    color: #fff;
+    border-top-left-radius: 50% 80%;
+    border-top-right-radius: 50% 80%;
+}
+
+/* setting max widths, etc. to make sure its responsive on phone screens */
+@media (max-width: 450px) {
+    body {
+        font-size: 0.8rem;
+    }
+
+    .intro h1 {
+        font-size: 2rem;
+    }
+
+    .intro p {
+        font-size: 1rem;
+    }
+
+    .projects h2 {
+        font-size: 1.6rem;
+    }
+}

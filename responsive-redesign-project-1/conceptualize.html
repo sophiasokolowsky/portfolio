@@ -1,0 +1,96 @@
+  <!-- TO RUN IN BROWSER:
+    1. Install vscode extension Name: open in `browser open-in-browser` by TechER
+    2. Right click html file and either run in default browser or another browser
+  -->
+
+
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Responsive Redesign Homepage</title>
+      <!-- import CSS styles -->
+      <link rel="stylesheet" href="styles.css" /> 
+    </head>
+  
+    <!-- page content goes into <body> -->
+    <body>
+      <header>
+        <div class="logo">Responsive Redesign</div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="conceptualize.html" class="active">Conceptualize</a></li>
+            <li><a href="process.html">Process</a></li>
+            <li><a href="redesign.html">Redesign</a></li>
+          </ul>
+        </nav>
+      </header>
+  
+      <main class="title">
+        <h1>Why Is There Need For Redesign!?</h1>
+        <p>Take a look at the images below or you can also click on the link and see the full original Holm Center website. What comes to mind upon first seeing the layout? </p>
+        <a href="https://wings.holmcenter.com/psc/hcp/LANDING/PORT_HCP/c/NUI_FRAMEWORK.PT_LANDINGPAGE.GBL?" target="_blank">Visit Holm Center's Landing Page</a>
+        <section class="image-box">
+            <img src="./assets/og-1.png" alt="Image of website 1" class="og-web-image">
+            <img src="./assets/og-2.png" alt="Image of website 2" class="og-web-image">
+        </section>
+        <br>
+        <p>Below you will find some information describing what I found the design issues to be... click on the boxes to see more!</p>
+      </main>
+      
+      <div id="buttons">
+        <button onclick="showText('text1')" class="button-1">Accessibility:</button>
+        <p id="text1" class="hidden-box">
+          This webpage is only accessible if the user has access to a desktop computer with a mouse. Attempting to navigate through 
+          the page using only a keyboard results in only being able to access 2 of the 13 major components. When trying to use the 
+          webpage on a mobile device, the text becomes too small to read, components do not stack correctly, the user loses access 
+          to two of the components in the navigation bar, and the overall functionality of the webpage falls apart.          
+        </p>
+
+        <button onclick="showText('text2')" class="button-1">Efficiency:</button>
+        <p id="text2" class="hidden-box">When a user clicks any of the interactive components, they load in the same tab, causing 
+          the user to have to either press the back button (which then usually results in improper loading of the webpage's 
+          contents) or manually searching for the landing page again. This also negates the usability of the 'home button' in 
+          the header, as once a user leaves the homepage, the icon disappears.</p>
+
+        <button onclick="showText('text3')" class="button-1">Learnability:</button>
+        <p id="text3" class="hidden-box">Upon accessing this webpage for the first time, it would be very difficult for users to 
+          navigate the page without assistance. They would discover that 3 of the interactive components have no purpose (i.e. 
+          You click the dropdown menu for there to be one option which is the same as the title of the dropdown menu). They would 
+          also discover that a few of the boxes in the main content section are interactive buttons all with different hover 
+          features, and the rest are not interactive at all.</p>
+
+      <div id="buttons">
+        <button onclick="showText('text4')" class="button-1">General Design Issues:</button>
+        <p id="text4" class="hidden-box">The text is written in very fine, very small print which makes it difficult to read. This 
+          is very important given the opening message on the site is meant to alert users to information security concerns upon 
+          them logging into the site with their credentials. Additionally, the page has no clear hierarchy, making it confusing 
+          for users to navigate. Lastly, the color palette is hard on the eyes due to poor contrast and coordination.
+        </p>
+
+        <button onclick="showText('text5')" class="button-1">Conceptual Model Misalignment:</button>
+        <p id="text5" class="hidden-box">When accessing a United States military webpage, the typical user would assume the 
+          webpage to be functional and well designed as the military provides the country's most highly-trained cybersecurity and 
+          computer science specialists. Additionally, one would think the military wants to portray themselves as being 
+          professional, attentive to detail, and excellent at what they do. This is not reflected in this webpage.</p>
+      </div>
+
+      <h1></h1>
+      <h1></h1>
+
+        <!--show text for buttons (js) - same as in first project (copied and pasted from my first webpage)-->
+        <script>
+            function showText(id) {
+                const element = document.getElementById(id);
+                if (element.style.display === "none") {
+                    element.style.display = "block";
+                } else {
+                    element.style.display = "none";
+                }
+            }
+        </script>
+    
+    </body>
+  
+  </html>
