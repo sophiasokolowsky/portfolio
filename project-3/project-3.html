@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible Components Project</title>
+  <link rel="stylesheet" href="project-3.css">
+</head>
+<body>
+    <div class="container">
+        
+    <header class="header">
+        <h1>Accessible Components</h1>
+        <p><strong>UX Research | User Interface Design | Figma</strong></p>
+    </header>
+
+    <div class = back-button><a href="../index.html" class="back">Back to Portfolio</a></div>
+
+    <section>
+        <h2>Overview</h2>
+        <p>Welcome to my accessible components project! This project explores how improving everyday user interfaces can increase 
+            user accessibility and usability, leading to proper interface usage and website security. I began by analyzing key 
+            components across three different, everyday applications, evaluating each in terms of user experience and accessibility 
+            performance. From this analysis, I selected one component to focus on and created detailed state models to visualize 
+            how it functions across different user interactions. I then iteratively redesigned the component to improve its 
+            learnability, memorability, efficiency, and accessibility.</p>
+    </section>
+
+    <section>
+        <h2>Part 1: Focusing on User Inputs</h2>
+        <h3>How do user inputs affect accessibility?</h3>
+        <p>The first part of my design process was to look into how user interaction and input can change the accessibility features 
+            of a given webpage component. I chose to explore the effects of input on a search bar. I chose to interact with three 
+            different applications' search bars: 
+            <ul>
+                <li>CNN</li>
+                <li>CAB</li>
+                <li>Google</li>
+            </ul>
+            I focused on using three different user inputs with these search bars by using: 
+            <ul>
+                <li>only a mouse</li>
+                <li>only a keyboard</li>
+                <li>only touch</li>
+            </ul>
+        <p>Please refer to the images below for reference of what each applications search bar looks like:</p>
+        <img src="./assets/input-search-bars.png">
+
+        <p><strong>Click each button below to learn more about my findings with each user input for each application!</strong></p>
+
+        <div class="legend">
+            <img src="./assets/legend-1.png" alt="legend 1" class="legend-image-1">
+        </div>
+
+        <!--Info buttons-->
+        <div id="buttons">
+            <button onclick="showText('text1')" class="button button-1">Google: Mouse User</button>
+            <ul id="text1" style="display: none;">
+                    <li>When a user clicks on the search bar, a list of trending searches appear.</li>
+                    <li>If a user wishes to input their own prompt, they must use the keyboard to type in their response.</li>
+                    <li>If a user begins typing a search, recommended searches appear in a drop down that the user can access via mouse or trackpad.</li>
+                    <li><strong>Note: the search bar is only accessible for user search if they have access to a keyboard</strong></li>
+            </ul>
+
+            <button onclick="showText('text2')" class="button button-2">Google: Keyboard User</button>
+            <ul id="text2" style="display: none;">
+                <li>Loading into the google homepage, the search bar is already activated awaiting user input.</li>
+                <li>The line that indicates this is blinking in place to let users know that it is awaiting input.</li>
+                <li>A user can then use the keyboard to type in their search and then press enter to initiate the search.</li>
+                <li>While typing, a user can also use the down/up arrows to select a suggested search based on the text they have input.</li>
+                <li><strong>Note: By only accessing the keyboard to use Googles Search Bar, users can fully carry out the task.</strong></li>
+            </ul>
+
+            <button onclick="showText('text3')" class="button button-3">Google: Touch User</button>
+            <ul id="text3" style="display: none;">
+                <li>On a mobile device, Googles home page does not have the search bar automatically activated.</li>
+                <li>In this case, the user must click an existing recommended search based on world wide trending searches 
+                    from a displayed list or they must click into the search bar itself.</li>
+                <li>Once they click into the search bar, it is activated and awaiting their input.</li>
+                <li>They must then use the touch keyboard to type in their search.</li>
+                <li><strong>Note: A user can use all functional aspects of the search bar using touch features such as clicking into the search bar and 
+                    using the touch keyboard to type their search.</strong></li>
+            </ul>
+
+            <button onclick="showText('text4')" class="button button-4">CNN: Mouse User</button>
+            <ul id="text4" style="display: none;">
+                <li>When a user lands on CNNs search page, there is a displayed search bar that is 
+                    not currently selected.</li>
+                <li>A user then must use their mouse or trackpad to click into the search bar. From here, 
+                    they must use their keyboard to type in a search.</li>
+                <li>They can then use their mouse to click on the search icon in 
+                    the far right hand side of the search bar to submit their search.</li>
+                <li>It is inconvenient to use the mouse to 
+                    initiate the search as the user must travel their mouse or trackpad across the entire page to reach the search 
+                    icon.</li>
+                <li><strong>Note: the search bar is not functionally accessible without a keyboard.</strong></li>
+            </ul>
+
+            <button onclick="showText('text5')" class="button button-5">CNN: Keyboard User</button>
+            <ul id="text5" style="display: none;">
+                <li>To activate the search bar so that it is awaiting user input, the user must 
+                    hit the tab bar on their keyboard twice, which is not at all intuitive or learnable.</li>
+                <li>Once there, the line that 
+                    indicates search bar activation is blinking to let users know that it is awaiting 
+                    input.</li>
+                <li>From there, a user can use the keyboard to type in their search and then press enter to initiate the 
+                    search.</li>
+                <li><strong>Note: By only accessing the keyboard to use CNNs Search Bar, one can fully complete 
+                    the task.</strong></li>
+            </ul>
+
+            <button onclick="showText('text6')" class="button button-6">CNN: Touch User</button>
+            <ul id="text6" style="display: none;">
+                <li>On a mobile device, CNNs search bar is not automatically activated.</li>
+                <li>Therefore, 
+                    a user must first click into the search bar box and then use their touch keyboard to type in their search.</li>
+                <li>They 
+                    can then choose to either press search/enter on their touch keyboard or they can press the search icon on the 
+                    right side of the search bar.</li>
+                <li><strong>Note: A user can use all functional aspects of the search bar using touch features such as clicking into the search bar and using the touch 
+                    keyboard to type their search.</strong></li>
+            </ul>
+
+            <button onclick="showText('text7')" class="button button-7">CAB: Mouse User</button>
+            <ul id="text7" style="display: none;">
+                <li>On the CAB homepage, the search bar is automatically activated.</li>
+                <li>A user must then use their keyboard to type in a search prompt.</li>
+                <li>From there, if a user wishes to submit their search, they must move their mouse away from the search bar a couple inches to a button that says find courses. This is not intuitive.</li>
+                <li><strong>Note: the search bar is not functionally accessible without a keyboard.</strong></li>
+            </ul>
+
+            <button onclick="showText('text8')" class="button button-8">CAB: Keyboard User</button>
+            <ul id="text8" style="display: none;">
+                <li>Upon entering the CAB homepage, a user must simply type in their search 
+                    prompt on their keyboard, then press enter to submit their search.</li>
+                <li>It is very straightforward and intuitive.</li>
+                <li><strong>Note: By only accessing the keyboard to use CABs Search Bar, one can fully carry out 
+                    the task they are trying to achieve. </strong></li> 
+            </ul>
+
+            <button onclick="showText('text9')" class="button button-9">CAB: Touch User</button>
+            <ul id="text9" style="display: none;">
+                <li>On a mobile device, CABs search bar is automatically activated.</li>
+                <li>A user can immediately type their search prompt using the touch keyboard function and then they can either hit 
+                    enter on that keyboard, or they must scroll down and click the button that says find courses.</li>
+                <li><strong>Note: A user can use all functional aspects of the search bar using touch features such as clicking into the search bar and 
+                    using the touch keyboard to type their search.</strong></li>
+            </ul>
+
+        </div>
+        <p>As you can see above, most search bars can not be used without a keyboard, as it is required for the user to type in their 
+            prompt. Automatic search bar activation increases accessibility. Although it is intuitive for users to click into the search bar with a mouse, it is far less intuitive,
+             learnable, and memorable for them to have to hit the tab bar twice if they only have access to a keyboard. Lastly, having 
+             the ability to either press enter or click a search button to initiate a users search, is beneficial. This makes sure a 
+             user has multiple accessible ways to submit their search.</p>
+    </section>
+
+    <section>
+        <h2>Part 2: Focusing on Output</h2>
+        <h3>How do various outputs effect user accessibility?</h3>
+
+        <p>After my analysis of user input interaction, I decided to take a look into the outputs of pressing the search button across the same webpages. I also looked into the focus order and screen reader usability on each page.</p>
+
+        <p><strong>Click on each button to learn more about my experience!</strong></p>
+        
+        <div class="legend">
+            <img src="./assets/legend-2.png" alt="legend 2" class="legend-image-2">
+        </div>
+
+        <!--Info buttons-->
+        <div id="buttons">
+            <button onclick="showText('text11')" class="button button-21">Google: Output</button>
+            <ul id="text11" style="display: none;">
+                <li>When hovering over the button, the outline around it highlights white, 
+                    letting the user know that they can click it.</li>
+                <li>When clicking down, nothing happens. When releasing the click, 
+                    the search is submitted.</li>
+                <li>The way the user knows their search has been submitted is because the page is redirected 
+                    to show their search results.</li>
+                <li>The actual search button does not display any output that would make the user 
+                    aware that they have clicked it.</li>
+                <li>The outline remains white until the page is redirected. This is a simple 
+                    design that works well because it is clear about what is happening but is not overwhelming.</li>
+            </ul>
+
+            <button onclick="showText('text21')" class="button button-22">Google: Focus Order</button>
+            <ul id="text21" style="display: none;">
+                <li>Search bar -> Search by Voice Icon -> Search by Image Icon -> Google Search Button 
+                    -> Vibe of the Day Button... Cycles 1-5 then back to 1.</li>
+                <li>This focus order makes a lot of intuitive sense as it 
+                    follows the key elements on the screen in order from top to bottom, left to right.</li>
+                <li>This makes sense for someone 
+                    who can not read what is on the screen, as it follows the layout of the screen and is very intentional.</li> 
+            </ul>
+
+            <button onclick="showText('text31')" class="button button-23">Google: Screen Reader</button>
+            <ul id="text31" style="display: none;">
+                <li>Upon activating voiceover, it alerts the user that they are on the Google 
+                    Homepage.</li>
+                <li>It states that the user is currently on a combo box and how to use it. Could be more clear in specifying that it is a search box.</li>
+                <li>From there, if the user presses tab, it moves 
+                    to the next item on the screen, alerts the user to what this item is (a button, a frame, Google, leaving 
+                    Google, etc.) and tells the user what keys to press to interact with the item/object they are currently on.</li>
+                <li>If you actively put in a search and use the arrow keys to go up and down the list of search suggestions, it 
+                    reads the text to you.</li>
+            </ul>
+
+            <button onclick="showText('text41')" class="button button-24">CNN: Output</button>
+            <ul id="text41" style="display: none;">
+                <li>When hovering over the search icon, there is no change on the button that 
+                    notifies the user that they can click it.</li>
+                <li>Upon clicking the button, there is still no change in output.</li>
+                <li>Once 
+                    releasing the click of the button, the website reloads and outputs a list of related news articles based on 
+                    the users search.</li>
+                <li>Could be improved by having some kind of change in the output of the button 
+                    when hovering over it to make it clear to the user that they can click it for functionality, rather than 
+                    it appearing as decoration on the website.</li>
+            </ul>
+
+            <button onclick="showText('text51')" class="button button-25">CNN: Focus Order</button>
+            <ul id="text51" style="display: none;">
+                <li>Sign In Button -> Search Bar -> Unclear what the selected object is, but it 
+                    shows all the various news article topics one can find on the website -> Browser Search Bar... Cycles 1-4 then 
+                    back to 1.</li>
+                <li>Once you click to the search bar, the next focus item is not the search icon as one might expect. 
+                    It actually skips to the bottom of the page to show all the various news topics one can choose from.</li>
+                <li>This is 
+                    not intuitive and I think there should be a focus step added to include the search icon.</li>
+                <li>Lastly, it has a focus 
+                    item of the browser's search bar which is unnecessary.</li>
+            </ul>
+
+            <button onclick="showText('text61')" class="button button-26">CNN: Screen Reader</button>
+            <ul id="text61" style="display: none;">
+                <li>Upon activating voiceover, it alerts the user that they are on the CNN website.</li>
+                <li>When navigating to the search bar, voice over notifies you that you are in the search bar.</li>
+                <li>It then tells you to 
+                    type text and tells you how to submit your search.</li>
+                <li>However, when clicking tab, it becomes clear that while the 
+                    search bar and its search suggestions take up the entirety of the screen, the Screen Reader is actually reading 
+                    information from the homepage of CNN which is hidden by the search bar.</li>
+                <li>This is incredibly confusing, and 
+                    difficult to interpret and navigate.</li>
+            </ul>
+
+            <button onclick="showText('text71')" class="button button-27">CAB: Output</button>
+            <ul id="text71" style="display: none;">
+                <li>When hovering over the search icon, the entire button darkens in color.</li>
+                <li>This notifies the user that they can click it. Upon clicking down, no output changes.</li>
+                <li>When the user releases 
+                    their click, a panel slides out from the right side of the main panel with a list of courses matching the 
+                    users search.</li>
+                <li>Once the user moves their mouse so it is no longer hovering on the search button, the button 
+                    returns to its normal color.</li>
+                <li>This is well designed, easy to understand, and very readable.</li>
+                <li>The darkening of actionable objects as the user hovers over them as even people who are colorblind 
+                    would be able to notice a difference.</li> 
+            </ul>
+
+            <button onclick="showText('text81')" class="button button-28">CAB: Focus Order</button>
+            <ul id="text81" style="display: none;">
+                <li>Main Search Bar -> Term Selection Drop Down -> Course Number Selection Drop 
+                    Down -> Modes of Instruction Drop Down -> Saved Carts Drop Down -> Department Drop Down -> Subject Drop Down -> 
+                    Time Drop Down -> Credits Drop Down -> Instructor Search Bar -> Browser Search Bar... Cycles 1-11 then back to 1.</li>
+                <li>This focus order makes a lot of sense as it follows the general layout of the webpages key elements. 
+                    It has them prioritized from top to bottom.</li>
+                <li>That being said, it does skip the Find Courses Button which 
+                    submits the users search, negativley impacting usability.</li>
+            </ul>
+
+            <button onclick="showText('text91')" class="button button-29">CAB: Screen Reader</button>
+            <ul id="text91" style="display: none;">
+                <li>This voiceover functionality is highly effective.</li>
+                <li>When activating 
+                    it, it alerts the user that they are on the Courses at Brown webpage.</li>
+                <li>When activating the search bar, it tells 
+                    the user to type in a keyword or subject, but it does not specify that this is a search box, which would be helpful.</li>
+                <li>It then goes down the left panel of the webpage and highlights each object when pressing tab to include the Find 
+                    Courses button.</li>
+                <li>It also notifies the user on how to use their 
+                    keyboard to use any of the objects functions.</li>
+                <li>One downside is that it fails to access any other portion of the 
+                    webpage (only the search fields on the left side).</li>
+                <li>It would be useful if it could also access the 
+                    recommended course listings in the center of the webpage as they are a key element when looking at the screen.</li>  
+            </ul>
+        </div>
+        <p>As you can see above, CABs output functions, and Googles focus order and Screen Reader capabilities are superior. 
+            The focus order of a webpage has a huge impact 
+            on the accessibility of the Screen Reader and therefore makes the webpage accessible or inaccessible for certain users.</p>
+    </section>
+
+    <section>
+        <h2>Part 3: Component State Models</h2>
+        <p>My next step in the deisgn process was understanding the states in which specific components moved through given a user input.
+            I created state models to show this.</p>
+
+            <h4>Look at the orignial state models of the CAB search button below. The first image shows the available 
+                states for a mouse user and the second shows the available states for a keyboard user.</h4>
+                <div class="legend">
+                    <img src="./assets/org-mouse-user.png" alt="original mouse user state model" class="new-buttons">
+                </div>
+                <div class="legend">
+                    <img src="./assets/org-keyboard-user.png" alt="original keyboard user state model" class="new-button">
+                </div>
+    
+            <h4>Now, the following images show improved state availability to enhance user experience: </h4>
+                <div class="legend">
+                    <img src="./assets/new-mouse-user.png" alt="new mouse user state model" class="new-buttons">
+                </div>
+                <div class="legend">
+                    <img src="./assets/new-keyboard-user.png" alt="new keyboard user state model" class="new-buttons">
+                </div>
+            
+            <h4>Now that we have seen the state models for CABs search button, let us now take a look at the button itself. Below, you 
+                can see the original design for the button in its initial state (lighter) and the original design for the button in 
+                its hover state (darker).</h4>
+                <div class="legend">
+                    <img src="./assets/org-cab.png" alt="original CAB search button initial state" class="new-buttons">
+                </div>
+                <div class="legend">
+                    <img src="./assets/org-cab-hover.png" alt="original CAB search button hover state" class="new-buttons">
+                </div>
+    
+            <h4>Notice how the difference between these two states in the original images is very slight. I have redeisgned the button 
+                for these two states to make the difference easier for any user to see. Below, the first image shows the CAB button 
+                in its improved initial state and the second image shows the CAB button in its improved hover state.</h4>
+                <div class="legend">
+                    <img src="./assets/new-cab-button.png" alt="new CAB search button in initial and hover states" class="new-buttons">
+                </div>
+
+        
+    </section>
+
+    <section>
+        <h2>Reflection</h2>
+        <ul>
+            <li>All of the components I observed made their components noticeable for users both visually looking at the screen and those using a screen reader.</li>
+            <li>All had some sort of hover feature so that the user could potentially see a change when they hovered over or focused on the search bar.</li>
+            <li>I made sure that all of my buttons are large and easily readable in my design and I also made sure that all of my main components (to include text boxes) are accessible through the screen reader and keyboard.</li>
+            <li>I included hover features as well that are highly distinguishable so it is clear to the user that they are hovering over a clickable element.</li>
+            <li>Designers most commonly prioritize touch/mobile users, which negatively impacts other user experiences.</li>
+            <li>Most applications are not entirely accessible to someone who can use only a mouse or only a keyboard. This causes a mismatch between many users and the virtual environments they often interact with.</li>
+        </ul>
+    </section>
+    </div>
+        <!--show text for buttons (js)-->
+        <script>
+            function showText(id) {
+                const element = document.getElementById(id);
+                if (element.style.display === "none") {
+                    element.style.display = "block";
+                } else {
+                    element.style.display = "none";
+                }
+            }
+        </script>
+
+    </body>
+</html>

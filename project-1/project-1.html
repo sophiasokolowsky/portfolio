@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miyagi Labs Project</title>
+  <link rel="stylesheet" href="project-1.css">
+</head>
+<body>
+    <div class="container">
+        
+    <header class="header">
+        <h1>Holm Center Portal Redesign</h1>
+        <p><strong>UX Research | User Interface Design | Figma</strong></p>
+    </header>
+
+    <div><a href="../index.html" class="back">Back to Portfolio</a></div>
+
+    <section>
+        <h2>Overview</h2>
+        <p>As an officer in the United States Air Force, it is common we must login to the Holm Center portal to do paperwork. Upon loading into
+            the Air Force's Holm Center Homepage, it is shocking to see how poorly designed it was. The text is nearly impossible to read, and it is difficult to
+            figure out where to login or even which buttons could be pressed! I decided to redesign their webpage as my own personal project.
+            I focused on improving the page's responsiveness and user functionality to help improve usability and therefore security. The more intuitive the design, the safer it is for everyday users to access.
+        </p>
+    </section>
+
+    <section>
+        <h2>Why Is There Need For Redesign?</h2>
+        <p>Take a look at the images below or you can also click on the link and see the full original Holm Center website. What comes to mind upon first seeing the layout?</p>
+        <div><a href="https://wings.holmcenter.com/psc/hcp/LANDING/PORT_HCP/c/NUI_FRAMEWORK.PT_LANDINGPAGE.GBL?" class="back">Visit Holm Center's Landing Page</a></div>
+        <h3></h3>
+        <section class="image-box">
+            <img src="./assets/og-1.png" alt="Image of website 1" class="og-web-image">
+            <img src="./assets/og-2.png" alt="Image of website 2" class="og-web-image">
+        </section>
+        <p>Below you will find some information describing what I found the design issues to be... click on the boxes to see more!</p>
+      </main>
+
+      <div id="buttons">
+        <button onclick="showText('text1')" class="button-1">Accessibility:</button>
+        <p id="text1" class="hidden-box">
+          This webpage is only accessible if the user has access to a desktop computer with a mouse. Attempting to navigate through 
+          the page using only a keyboard results in only being able to access 2 of the 13 major components. When trying to use the 
+          webpage on a mobile device, the text becomes too small to read, components do not stack correctly, the user loses access 
+          to two of the components in the navigation bar, and the overall functionality of the webpage falls apart.          
+        </p>
+
+        <button onclick="showText('text2')" class="button-1">Efficiency:</button>
+        <p id="text2" class="hidden-box">When a user clicks any of the interactive components, they load in the same tab, causing 
+          the user to have to either press the back button (which then usually results in improper loading of the webpage's 
+          contents) or manually searching for the landing page again. This also negates the usability of the 'home button' in 
+          the header, as once a user leaves the homepage, the icon disappears.</p>
+
+        <button onclick="showText('text3')" class="button-1">Learnability:</button>
+        <p id="text3" class="hidden-box">Upon accessing this webpage for the first time, it would be very difficult for users to 
+          navigate the page without assistance. They would discover that 3 of the interactive components have no purpose (i.e. 
+          You click the dropdown menu for there to be one option which is the same as the title of the dropdown menu). They would 
+          also discover that a few of the boxes in the main content section are interactive buttons all with different hover 
+          features, and the rest are not interactive at all.</p>
+
+      <div id="buttons">
+        <button onclick="showText('text4')" class="button-1">General Design Issues:</button>
+        <p id="text4" class="hidden-box">The text is written in very fine, very small print which makes it difficult to read. This 
+          is very important given the opening message on the site is meant to alert users to information security concerns upon 
+          them logging into the site with their credentials. Additionally, the page has no clear hierarchy, making it confusing 
+          for users to navigate. Lastly, the color palette is hard on the eyes due to poor contrast and coordination.
+        </p>
+
+        <button onclick="showText('text5')" class="button-1">Conceptual Model Misalignment:</button>
+        <p id="text5" class="hidden-box">When accessing a United States military webpage, the typical user would assume the 
+          webpage to be functional and well designed as the military provides the country's most highly-trained cybersecurity and 
+          computer science specialists. Additionally, one would think the military wants to portray themselves as being 
+          professional, attentive to detail, and excellent at what they do. This is not reflected in this webpage.</p>
+      </div>
+    </section>
+    <h2>How did I go about redesigning this page?</h2>
+    <p>Given the usability issues discussed on the conceptualize page, I knew I had to change the text sizes, color palette, and general layout design of the page. Below, you can see an image of the visual design style guide I created before starting to put together my mockups.</p>
+    <section class="image-process">
+        <img src="./assets/design-palette.png" alt="Image of Palette" class="palette-image">
+    </section>
+    <p>In order to have a fully accessible and functional site, I decided it would be crucial to have the webpage be fully responsive - 
+        meaning it was viewable and usable on all different screen sizes. As this is a complicated task since the layout must change for various
+        screen types, I started by creating mockup designs before beginning to code the actual site. Below, you can see my mockup designs
+        for each screen size along with annotations describing how the accessibility and usability is improved. To help maintain layout regardless of
+        screensizes, I used combinations of flexbox, grid layouts, and CSS's @media function to specify specific redesigns for each screen.
+    </p>
+    <section class="mockup-box">
+        <p class="mockup-title">DESKTOP MOCKUP:</p>
+        <p>All redundant and useless buttons were removed from the page increasing user efficiency without hindering 
+          usability. All interactive components are designed with learnability in mind by maximizing their intuitive value. Additionally, 
+          there is a clear hierarchy among components due to bigger text, improved layout, and contrasting colors.</p>
+        <img src="./assets/desktop-mockup.png" alt="Image of Desktop Mockup" class="mockup-1">
+        <p class="mockup-title">TABLET MOCKUP:</p>
+          <p>When transitioning from a desktop view to a tablet view, everything remains the same, but some text sizes shrink 
+            slightly along with the padding in the footer. Everything remains easily readable and digestible for new users.</p>
+          <img src="./assets/tablet-mockup.png" alt="Image of Tablet Mockup" class="mockup-2">
+          <p class="mockup-title">PHONE MOCKUP:</p>
+          <p>As screen size continues to shrink towards the size of a phone screen, components begin to stack. With properly 
+            stacked components that are fully responsive to changing screen sizes, all interactive components are and 
+            remain accessible for all users. The notice collapses (unless prompted to expand by user interaction) but remains 
+            the focus of the page to ensure users do not miss it.</p>
+          <img src="./assets/phone-mockup.png" alt="Image of Phone Mockup" class="mockup-3">
+    </section>
+
+    <section>
+        <h2>Take a Look at my Final Product!</h2>
+        <p>Click the button below to be taken directly to my redesigned site or scroll down to view images of the final webpage on 
+          various screen sizes! Note that these images were input as screenshots and therefore are not interactive. To see the full
+        final design, please refer to the button below!</p>
+        <div><a href="https://sophiasokolowsky.github.io/responsive-redesign-site/" class="back">View The Redesigned Webpage</a></div>
+        <h4></h4>
+        <section class="final-box">
+            <img src="./assets/final-desktop.png" alt="Image of final website 1" class="final-desktop">
+            <img src="./assets/final-tablet-and-phone.png" alt="Image of final website 2" class="final-tablet-and-phone">
+        </section>
+    </section>
+
+    </div>
+    <!--show text for buttons (js) - same as in first project (copied and pasted from my first webpage)-->
+    <script>
+        function showText(id) {
+            const element = document.getElementById(id);
+            if (element.style.display === "none") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+    </body>
+</html>
