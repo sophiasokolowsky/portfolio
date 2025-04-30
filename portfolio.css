@@ -118,6 +118,27 @@ body {
     border-top-right-radius: 50% 80%;
 }
 
+/*homepage pics*/
+    .pics {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0 auto;
+    width: 50%;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+  
+    .pics img.pics {
+    display: block;
+    max-width: 100rem;
+    margin: 0;
+    padding: 0;
+    border: none;
+    justify-content: center;
+  }
+
 /* setting max widths, etc. to make sure its responsive on phone screens */
 @media (max-width: 450px) {
     body {
@@ -134,5 +155,8 @@ body {
 
     .projects h2 {
         font-size: 1.6rem;
+    }
+    .pics {
+        width: 50%;
     }
 }
